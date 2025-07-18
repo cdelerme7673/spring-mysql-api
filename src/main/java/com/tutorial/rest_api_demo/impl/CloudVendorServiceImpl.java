@@ -4,7 +4,6 @@ import com.tutorial.rest_api_demo.model.CloudVendor;
 import com.tutorial.rest_api_demo.repository.CloudVendorRepository;
 import com.tutorial.rest_api_demo.service.CloudVendorService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
