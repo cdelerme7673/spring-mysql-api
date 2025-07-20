@@ -1,4 +1,4 @@
-package com.tutorial.rest_api_demo.impl;
+package com.tutorial.rest_api_demo.service.impl;
 
 import com.tutorial.rest_api_demo.model.CloudVendor;
 import com.tutorial.rest_api_demo.repository.CloudVendorRepository;
@@ -10,7 +10,9 @@ import java.util.List;
 public class CloudVendorServiceImpl implements CloudVendorService {
     CloudVendorRepository cloudVendorRepository;
 
-    public CloudVendorServiceImpl(CloudVendorRepository cloudVendorRepository) {}
+    public CloudVendorServiceImpl(CloudVendorRepository cloudVendorRepository) {
+        this.cloudVendorRepository = cloudVendorRepository;
+    }
     // All returned data values are passed to the Controller layer...
 
     @Override
