@@ -26,6 +26,8 @@ public class CloudVendorServiceImpl implements CloudVendorService {
     @Override
     public String updateCloudVendor(CloudVendorModel cloudVendorModel) {
         // < Additional business logic goes here >
+        if (cloudVendorRepository.findById(cloudVendorModel.getVendorId()).isEmpty())
+            throw new CloudVendorNotFoundException("Cloud Vendor " + cloudVendorModel.getVendorId() + " not found");
         cloudVendorRepository.save(cloudVendorModel);
         return "Cloud Vendor updated successfully.";
     }
@@ -33,6 +35,8 @@ public class CloudVendorServiceImpl implements CloudVendorService {
     @Override
     public String deleteCloudVendor(String cloudVendorId) {
         // < Additional business logic goes here >
+        if (cloudVendorRepository.findById(cloudVendorId).isEmpty())
+            throw new CloudVendorNotFoundException("Cloud Vendor " + cloudVendorId + " not found");
         cloudVendorRepository.deleteById(cloudVendorId);
         return "Cloud Vendor deleted successfully.";
     }
