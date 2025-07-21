@@ -1,6 +1,6 @@
 package com.tutorial.rest_api_demo.service.impl;
 
-import com.tutorial.rest_api_demo.model.CloudVendor;
+import com.tutorial.rest_api_demo.model.CloudVendorModel;
 import com.tutorial.rest_api_demo.repository.CloudVendorRepository;
 import com.tutorial.rest_api_demo.service.CloudVendorService;
 import org.springframework.stereotype.Service;
@@ -16,16 +16,16 @@ public class CloudVendorServiceImpl implements CloudVendorService {
     // All returned data values are passed to the Controller layer...
 
     @Override
-    public String createCloudVendor(CloudVendor cloudVendor) {
+    public String createCloudVendor(CloudVendorModel cloudVendorModel) {
         // < Additional business logic goes here >
-        cloudVendorRepository.save(cloudVendor);
+        cloudVendorRepository.save(cloudVendorModel);
         return "Cloud Vendor created successfully.";
     }
 
     @Override
-    public String updateCloudVendor(CloudVendor cloudVendor) {
+    public String updateCloudVendor(CloudVendorModel cloudVendorModel) {
         // < Additional business logic goes here >
-        cloudVendorRepository.save(cloudVendor);
+        cloudVendorRepository.save(cloudVendorModel);
         return "Cloud Vendor updated successfully.";
     }
 
@@ -37,13 +37,13 @@ public class CloudVendorServiceImpl implements CloudVendorService {
     }
 
     @Override
-    public CloudVendor getCloudVendor(String cloudVendorId) {
+    public CloudVendorModel getCloudVendor(String cloudVendorId) {
         // < Additional business logic goes here >
         return cloudVendorRepository.findById(cloudVendorId).get();
     }
 
     @Override
-    public List<CloudVendor> getAllCloudVendors() {
+    public List<CloudVendorModel> getAllCloudVendors() {
         // < Additional business logic goes here >
         return  cloudVendorRepository.findAll();
     }
