@@ -30,21 +30,12 @@ If you manually switch to a different parent and actually want the inheritance, 
 ### Project folder
 C:\DEV\Java\rest-api-demo
 
-### YouTube tutorials
-* Java REST API with Spring Boot Tutorial | REST API CRUD Implementation
-https://www.youtube.com/watch?v=iBGkJln9BPo
-
-* Creating Java REST API with Spring Boot , Spring Data JPA and MySQL | REST API CRUD Operations
-https://www.youtube.com/watch?v=RfHBm5yRxuw
-
-* Exception Handling in Spring Boot REST API
-https://www.youtube.com/watch?v=L2o485T70Do
-
-* Java Spring Boot REST API JSON Response Handling Tutorial
-  https://www.youtube.com/watch?v=cI6VlGDLH5s
-
-* Master Unit Testing Java Spring Boot REST API Application
-  https://www.youtube.com/watch?v=HqiEM5HQsZs 
-
 ### Run app from cmd line via Maven
 mvnw.cmd spring-boot:run
+
+### YouTube tutorials
+* [Java REST API with Spring Boot Tutorial | REST API CRUD Implementation](https://www.youtube.com/watch?v=iBGkJln9BPo)
+* [Creating Java REST API with Spring Boot , Spring Data JPA and MySQL | REST API CRUD Operations](https://www.youtube.com/watch?v=RfHBm5yRxuw)
+* [Exception Handling in Spring Boot REST API](https://www.youtube.com/watch?v=L2o485T70Do)
+* [Java Spring Boot REST API JSON Response Handling Tutorial](https://www.youtube.com/watch?v=cI6VlGDLH5s)
+* [Master Unit Testing Java Spring Boot REST API Application](https://www.youtube.com/watch?v=HqiEM5HQsZs)
